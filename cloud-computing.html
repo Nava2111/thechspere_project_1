@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Cloud Computing Guide – Learn cloud infrastructure, deployment models (public, private, hybrid), service layers (IaaS, PaaS, SaaS), and career paths for BCA students.">
+  <title>Cloud Computing – TechSphere</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Sticky Navigation Header -->
+  <header class="header">
+    <div class="container nav-container">
+      <a href="index.html" class="brand" aria-label="TechSphere Home">
+        <div class="brand-icon">T</div>
+        <div>
+          <span class="brand-name">TechSphere</span>
+          <span class="brand-badge">BCA Project</span>
+        </div>
+      </a>
+
+      <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle navigation menu" aria-expanded="false">
+        ☰
+      </button>
+
+      <nav>
+        <ul class="nav-menu" id="navMenu">
+          <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+          <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
+          <li class="nav-item"><a href="web-development.html" class="nav-link">Web Development</a></li>
+          <li class="nav-item"><a href="python.html" class="nav-link">Python</a></li>
+          <li class="nav-item"><a href="ai.html" class="nav-link">AI</a></li>
+          <li class="nav-item"><a href="machine-learning.html" class="nav-link">Machine Learning</a></li>
+          <li class="nav-item"><a href="cloud-computing.html" class="nav-link active">Cloud</a></li>
+          <li class="nav-item"><a href="cyber-security.html" class="nav-link">Cyber Security</a></li>
+          <li class="nav-item"><a href="career.html" class="nav-link">Career</a></li>
+          <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="main-content">
+    <!-- Page Header -->
+    <section class="page-header">
+      <div class="container page-header-content">
+        <ul class="breadcrumb">
+          <li><a href="index.html">Home</a></li>
+          <li class="breadcrumb-separator">/</li>
+          <li>Cloud Computing</li>
+        </ul>
+        <span class="section-badge">☁️ Infrastructure Track</span>
+        <h1>Cloud Computing</h1>
+        <p>
+          Understand how on-demand computing resources, global networks, and virtualized services have revolutionized modern software deployment and digital infrastructure.
+        </p>
+      </div>
+    </section>
+
+    <!-- What is Cloud Computing & Visual Model -->
+    <section class="section">
+      <div class="container">
+        <div class="cards-grid-2">
+          <div>
+            <span class="section-badge">Core Principle</span>
+            <h2>What is Cloud Computing?</h2>
+            <p>
+              Cloud computing is the delivery of on-demand computing services—including servers, data storage, networking capabilities, databases, and software applications—over the internet ("the cloud") on a pay-as-you-go pricing model.
+            </p>
+            <p>
+              Instead of colleges or companies buying and maintaining physical server rooms and cooling units, they rent computing capacity from major cloud providers such as Amazon Web Services (AWS), Microsoft Azure, and Google Cloud Platform (GCP).
+            </p>
+          </div>
+
+          <div class="tech-card">
+            <h3 class="card-title">Key Features of Cloud Computing</h3>
+            <ul>
+              <li><strong>On-Demand Self-Service:</strong> Users can provision servers and storage automatically without manual intervention.</li>
+              <li><strong>Broad Network Access:</strong> Services are accessible through standard web browsers from any device anywhere in the world.</li>
+              <li><strong>Resource Pooling:</strong> Provider resources are pooled dynamically to serve multiple customers securely.</li>
+              <li><strong>Rapid Elasticity:</strong> Systems can instantly scale up during traffic spikes and scale down during quiet hours.</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Visual Architecture: User -> Internet -> Cloud Services -->
+        <div class="section-title-wrap" style="margin-top: 4rem; margin-bottom: 1.5rem;">
+          <span class="section-badge purple">System Flow</span>
+          <h2 class="section-title">The Cloud Connection Model</h2>
+          <p class="section-subtitle">
+            How end-user devices interact seamlessly with remote cloud infrastructure.
+          </p>
+        </div>
+
+        <div class="process-flow">
+          <div class="process-step">
+            <div class="process-step-num">Step 01</div>
+            <div class="process-step-name">User Devices</div>
+            <div class="process-step-desc">Laptops, smartphones, IoT sensors, or desktop workstations.</div>
+          </div>
+
+          <div class="process-arrow">→</div>
+
+          <div class="process-step">
+            <div class="process-step-num">Step 02</div>
+            <div class="process-step-name">The Internet</div>
+            <div class="process-step-desc">Secure encrypted HTTPS connections, DNS routing, and ISP gateways.</div>
+          </div>
+
+          <div class="process-arrow">→</div>
+
+          <div class="process-step">
+            <div class="process-step-num">Step 03</div>
+            <div class="process-step-name">Cloud Services</div>
+            <div class="process-step-desc">Virtualized data centers hosting compute VMs, databases, and storage buckets.</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Cloud Service Models: IaaS | PaaS | SaaS -->
+    <section class="section section-alt">
+      <div class="container">
+        <div class="section-title-wrap">
+          <span class="section-badge">Service Hierarchy</span>
+          <h2 class="section-title">Three Main Cloud Service Models</h2>
+          <p class="section-subtitle">
+            Cloud offerings are traditionally organized into three layered abstraction levels: IaaS, PaaS, and SaaS.
+          </p>
+        </div>
+
+        <div class="cloud-models-grid">
+          <!-- IaaS -->
+          <div class="cloud-model-card">
+            <span class="cloud-model-tag">Infrastructure</span>
+            <h3>IaaS (Infrastructure as a Service)</h3>
+            <p>
+              Provides fundamental computing resources such as virtual machines, physical servers, block storage, and virtual network switches over the internet.
+            </p>
+            <p>
+              <strong>User Responsibility:</strong> Managing the operating system, installed software, runtimes, and application data.
+            </p>
+            <div class="cloud-model-examples">
+              <strong>Common Examples:</strong> Amazon EC2, Google Compute Engine, Microsoft Azure Virtual Machines.
+            </div>
+          </div>
+
+          <!-- PaaS -->
+          <div class="cloud-model-card">
+            <span class="cloud-model-tag" style="background-color: var(--accent-purple-subtle); color: var(--accent-purple); border-color: rgba(139, 92, 246, 0.3);">Platform</span>
+            <h3>PaaS (Platform as a Service)</h3>
+            <p>
+              Provides a ready-to-use development and deployment environment in the cloud. Developers focus solely on writing code while the platform manages OS patches, scaling, and web servers.
+            </p>
+            <p>
+              <strong>User Responsibility:</strong> Managing application source code and database configurations.
+            </p>
+            <div class="cloud-model-examples">
+              <strong>Common Examples:</strong> AWS Elastic Beanstalk, Google App Engine, Heroku, Render.
+            </div>
+          </div>
+
+          <!-- SaaS -->
+          <div class="cloud-model-card">
+            <span class="cloud-model-tag" style="background-color: rgba(16, 185, 129, 0.12); color: #34d399; border-color: rgba(16, 185, 129, 0.3);">Software</span>
+            <h3>SaaS (Software as a Service)</h3>
+            <p>
+              Delivers fully functioning, end-user applications hosted and operated by third-party cloud vendors accessible through web browsers.
+            </p>
+            <p>
+              <strong>User Responsibility:</strong> Simply logging in and using the software application without managing any servers.
+            </p>
+            <div class="cloud-model-examples">
+              <strong>Common Examples:</strong> Google Workspace (Gmail, Drive), Microsoft 365, Dropbox, Slack.
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Deployment Models & Career Opportunities -->
+    <section class="section">
+      <div class="container">
+        <div class="section-title-wrap">
+          <span class="section-badge">Deployment Strategies</span>
+          <h2 class="section-title">Cloud Deployment Models</h2>
+          <p class="section-subtitle">
+            How organizations choose to position and isolate their cloud workloads.
+          </p>
+        </div>
+
+        <div class="cards-grid-3">
+          <div class="tech-card">
+            <h4>🌐 Public Cloud</h4>
+            <p class="card-desc">
+              Computing infrastructure is owned and managed by third-party cloud providers and shared among multiple organizations over the public internet with logical isolation.
+            </p>
+          </div>
+
+          <div class="tech-card">
+            <h4>🏢 Private Cloud</h4>
+            <p class="card-desc">
+              Computing infrastructure is operated exclusively for a single enterprise, often hosted behind an on-premise firewall or a private dedicated data center for strict regulatory compliance.
+            </p>
+          </div>
+
+          <div class="tech-card">
+            <h4>🔀 Hybrid Cloud</h4>
+            <p class="card-desc">
+              Combines public and private clouds, bound together by standardized technology that allows data and applications to move seamlessly between them based on cost and security needs.
+            </p>
+          </div>
+        </div>
+
+        <!-- Applications, Benefits & Careers -->
+        <div class="cards-grid-2" style="margin-top: 3rem;">
+          <div class="tech-card">
+            <h3 class="card-title">Key Benefits of Cloud</h3>
+            <ul>
+              <li><strong>Cost Efficiency:</strong> Eliminates capital expenditure (CapEx) of physical hardware in favor of operational costs (OpEx).</li>
+              <li><strong>High Availability & Disaster Recovery:</strong> Automated geo-redundant backups ensure systems stay online even during hardware failures.</li>
+              <li><strong>Global Scalability:</strong> Deploy applications near users worldwide within minutes.</li>
+            </ul>
+          </div>
+
+          <div class="tech-card">
+            <h3 class="card-title">Cloud Career Opportunities</h3>
+            <ul>
+              <li><strong>Cloud Support Associate:</strong> Troubleshooting cloud server instances and user networking issues.</li>
+              <li><strong>Cloud Solutions Architect:</strong> Designing scalable and cost-effective multi-tier cloud applications.</li>
+              <li><strong>DevOps Engineer:</strong> Automating continuous integration and continuous deployment (CI/CD) pipelines in the cloud.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Global Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-about">
+          <a href="index.html" class="brand">
+            <div class="brand-icon">T</div>
+            <span class="brand-name">TechSphere</span>
+          </a>
+          <p>
+            An educational technology hub created as a BCA student project. Dedicated to introducing beginners to essential computer science domains with structured roadmaps.
+          </p>
+        </div>
+
+        <div class="footer-col">
+          <h4>Navigation</h4>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Project</a></li>
+            <li><a href="career.html">Career Roadmap</a></li>
+            <li><a href="contact.html">Contact & FAQ</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Technology Areas</h4>
+          <ul class="footer-links">
+            <li><a href="web-development.html">Web Development</a></li>
+            <li><a href="python.html">Python Programming</a></li>
+            <li><a href="ai.html">Artificial Intelligence</a></li>
+            <li><a href="machine-learning.html">Machine Learning</a></li>
+            <li><a href="cloud-computing.html">Cloud Computing</a></li>
+            <li><a href="cyber-security.html">Cyber Security</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Project Details</h4>
+          <ul class="footer-links">
+            <li><span style="color: var(--text-secondary); font-size: 0.875rem;">Program: BCA (Bachelor of Computer Applications)</span></li>
+            <li><span style="color: var(--text-secondary); font-size: 0.875rem;">Academic Year: 2024–2025</span></li>
+            <li><span style="color: var(--text-secondary); font-size: 0.875rem;">Type: Frontend Static Project</span></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2025 TechSphere – Technology & Learning Hub. Created for BCA College Academic Submission.</p>
+        <div class="footer-socials">
+          <a href="contact.html" class="social-link" title="Contact Us" aria-label="Contact">✉</a>
+          <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="social-link" title="GitHub" aria-label="GitHub">⚙</a>
+          <a href="career.html" class="social-link" title="Career Guide" aria-label="Career Roadmap">🎓</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to Top Floating Button -->
+  <button class="back-to-top" id="backToTop" aria-label="Scroll back to top">↑</button>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

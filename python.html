@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Python Programming Guide – Learn Python fundamentals, syntax features, real applications in AI and automation, and view interactive code demonstrations for BCA students.">
+  <title>Python Programming – TechSphere</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Sticky Navigation Header -->
+  <header class="header">
+    <div class="container nav-container">
+      <a href="index.html" class="brand" aria-label="TechSphere Home">
+        <div class="brand-icon">T</div>
+        <div>
+          <span class="brand-name">TechSphere</span>
+          <span class="brand-badge">BCA Project</span>
+        </div>
+      </a>
+
+      <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle navigation menu" aria-expanded="false">
+        ☰
+      </button>
+
+      <nav>
+        <ul class="nav-menu" id="navMenu">
+          <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+          <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
+          <li class="nav-item"><a href="web-development.html" class="nav-link">Web Development</a></li>
+          <li class="nav-item"><a href="python.html" class="nav-link active">Python</a></li>
+          <li class="nav-item"><a href="ai.html" class="nav-link">AI</a></li>
+          <li class="nav-item"><a href="machine-learning.html" class="nav-link">Machine Learning</a></li>
+          <li class="nav-item"><a href="cloud-computing.html" class="nav-link">Cloud</a></li>
+          <li class="nav-item"><a href="cyber-security.html" class="nav-link">Cyber Security</a></li>
+          <li class="nav-item"><a href="career.html" class="nav-link">Career</a></li>
+          <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="main-content">
+    <!-- Page Header -->
+    <section class="page-header">
+      <div class="container page-header-content">
+        <ul class="breadcrumb">
+          <li><a href="index.html">Home</a></li>
+          <li class="breadcrumb-separator">/</li>
+          <li>Python Programming</li>
+        </ul>
+        <span class="section-badge purple">🐍 Programming Track</span>
+        <h1>Python Programming</h1>
+        <p>
+          Discover why Python has become one of the most widely adopted programming languages in academia, industry automation, data science, and artificial intelligence.
+        </p>
+      </div>
+    </section>
+
+    <!-- What is Python & Why Popular -->
+    <section class="section">
+      <div class="container">
+        <div class="cards-grid-2">
+          <div>
+            <span class="section-badge">Language Fundamentals</span>
+            <h2>What is Python?</h2>
+            <p>
+              Python is a high-level, general-purpose, interpreted programming language created by Guido van Rossum and released in 1991. Its design philosophy emphasizes code readability through clean indentation and concise syntax.
+            </p>
+            <p>
+              Unlike lower-level languages like C or C++ where developers must manually manage memory allocations and declare verbose types, Python abstracts these complexities, allowing programmers to focus on solving algorithmic problems efficiently.
+            </p>
+          </div>
+
+          <div class="tech-card">
+            <h3 class="card-title">Why Python is Popular</h3>
+            <p class="card-desc">
+              Several reasons account for Python's explosive popularity across university campuses and Fortune 500 tech companies:
+            </p>
+            <ul>
+              <li><strong>Readable, English-like Syntax:</strong> Easy for beginners to understand without prior coding background.</li>
+              <li><strong>Massive Library Ecosystem (PyPI):</strong> Over 400,000 community packages ready for instant use.</li>
+              <li><strong>Multi-Paradigm:</strong> Supports procedural, object-oriented, and functional programming models.</li>
+              <li><strong>Cross-Platform Compatibility:</strong> Runs identically across Windows, macOS, Linux, and Raspberry Pi.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Code Block Demonstration Section -->
+    <section class="section section-alt">
+      <div class="container">
+        <div class="section-title-wrap">
+          <span class="section-badge">Live Demonstration</span>
+          <h2 class="section-title">Clean Python Syntax</h2>
+          <p class="section-subtitle">
+            Notice how few lines of code Python requires compared to traditional languages like Java or C.
+          </p>
+        </div>
+
+        <div style="max-width: 640px; margin: 0 auto;">
+          <div class="code-container">
+            <div class="code-header">
+              <div class="code-dots">
+                <span class="code-dot red"></span>
+                <span class="code-dot yellow"></span>
+                <span class="code-dot green"></span>
+              </div>
+              <span class="code-title">hello_student.py</span>
+              <span style="font-size:0.75rem; color:var(--text-muted);">Python 3.12</span>
+            </div>
+            <div class="code-body">
+<pre><span class="code-comment"># A simple Python program demonstrating variables and output</span>
+<span class="code-var">name</span> = <span class="code-str">"Student"</span>
+<span class="code-func">print</span>(<span class="code-str">"Hello"</span>, <span class="code-var">name</span>)</pre>
+            </div>
+            <div class="code-run-bar">
+              <span style="font-size:0.8rem; color:var(--text-secondary);">Click button to test output:</span>
+              <button class="btn btn-primary btn-sm" id="runCodeBtn">▶ Run Code</button>
+            </div>
+          </div>
+          <!-- Simulated terminal output -->
+          <div class="sim-output" id="codeOutput"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Core Features & Basic Concepts -->
+    <section class="section">
+      <div class="container">
+        <div class="section-title-wrap">
+          <span class="section-badge">Core Knowledge</span>
+          <h2 class="section-title">Features & Fundamental Concepts</h2>
+          <p class="section-subtitle">
+            Every BCA student should be familiar with these core language capabilities during theory exams and laboratory vivas.
+          </p>
+        </div>
+
+        <div class="cards-grid-2">
+          <!-- Features -->
+          <div class="tech-card">
+            <h3 class="card-title">Key Features of Python</h3>
+            <ul>
+              <li><strong>Interpreted:</strong> Executed line-by-line, which speeds up testing and debugging without manual compilation steps.</li>
+              <li><strong>Dynamically Typed:</strong> Variable types are determined automatically at runtime rather than pre-declared.</li>
+              <li><strong>Automatic Memory Management:</strong> Built-in garbage collector manages memory allocation and deallocation safely.</li>
+              <li><strong>Extensive Standard Library:</strong> Comes with built-in modules for mathematics, file I/O, JSON handling, and networking.</li>
+            </ul>
+          </div>
+
+          <!-- Basic Concepts -->
+          <div class="tech-card">
+            <h3 class="card-title">Basic Python Concepts</h3>
+            <ul>
+              <li><strong>Variables & Types:</strong> Integer (<code>int</code>), floating-point (<code>float</code>), text (<code>str</code>), and booleans (<code>bool</code>).</li>
+              <li><strong>Control Structures:</strong> Conditional statements (<code>if-elif-else</code>) and loops (<code>for</code>, <code>while</code>).</li>
+              <li><strong>Built-in Data Structures:</strong> Lists (mutable sequences), Tuples (immutable sequences), Dictionaries (key-value pairs), and Sets (unique values).</li>
+              <li><strong>Functions:</strong> Defined with the <code>def</code> keyword to encapsulate reusable blocks of logic.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Major Application Areas -->
+    <section class="section section-alt">
+      <div class="container">
+        <div class="section-title-wrap">
+          <span class="section-badge purple">Versatility</span>
+          <h2 class="section-title">Major Applications of Python</h2>
+          <p class="section-subtitle">
+            Explore the diverse domains where Python is actively used in modern industry and academic research.
+          </p>
+        </div>
+
+        <div class="cards-grid">
+          <!-- Python Basics -->
+          <div class="tech-card">
+            <div class="card-icon-wrap">💻</div>
+            <h3 class="card-title">Python Basics & Scripting</h3>
+            <p class="card-desc">
+              Writing small utility scripts for file manipulation, renaming directories in bulk, parsing logs, and automating command-line operations on computers.
+            </p>
+          </div>
+
+          <!-- Data Science -->
+          <div class="tech-card">
+            <div class="card-icon-wrap purple">📊</div>
+            <h3 class="card-title">Data Science</h3>
+            <p class="card-desc">
+              Analyzing large data sets, calculating statistical metrics, and generating charts using industry libraries such as <strong>Pandas</strong>, <strong>NumPy</strong>, and <strong>Matplotlib</strong>.
+            </p>
+          </div>
+
+          <!-- Automation -->
+          <div class="tech-card">
+            <div class="card-icon-wrap">⚙️</div>
+            <h3 class="card-title">Process Automation</h3>
+            <p class="card-desc">
+              Automating repetitive tasks such as web scraping with <strong>BeautifulSoup</strong>, filling web forms with <strong>Selenium</strong>, and sending scheduled alert emails.
+            </p>
+          </div>
+
+          <!-- AI & ML -->
+          <div class="tech-card">
+            <div class="card-icon-wrap purple">🧠</div>
+            <h3 class="card-title">Artificial Intelligence</h3>
+            <p class="card-desc">
+              Building neural networks, natural language processors, and computer vision models using <strong>TensorFlow</strong>, <strong>PyTorch</strong>, and <strong>Scikit-Learn</strong>.
+            </p>
+          </div>
+
+          <!-- Web Development -->
+          <div class="tech-card">
+            <div class="card-icon-wrap">🌐</div>
+            <h3 class="card-title">Web Development</h3>
+            <p class="card-desc">
+              Powering scalable server backends and REST APIs using robust Python web frameworks such as <strong>Django</strong>, <strong>Flask</strong>, and <strong>FastAPI</strong>.
+            </p>
+          </div>
+
+          <!-- Career in Python -->
+          <div class="tech-card">
+            <div class="card-icon-wrap purple">💼</div>
+            <h3 class="card-title">Python Career Paths</h3>
+            <p class="card-desc">
+              High-demand roles including Junior Python Developer, Automation Test Engineer, Data Analyst, Machine Learning Trainee, and Backend Software Engineer.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Global Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-about">
+          <a href="index.html" class="brand">
+            <div class="brand-icon">T</div>
+            <span class="brand-name">TechSphere</span>
+          </a>
+          <p>
+            An educational technology hub created as a BCA student project. Dedicated to introducing beginners to essential computer science domains with structured roadmaps.
+          </p>
+        </div>
+
+        <div class="footer-col">
+          <h4>Navigation</h4>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Project</a></li>
+            <li><a href="career.html">Career Roadmap</a></li>
+            <li><a href="contact.html">Contact & FAQ</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Technology Areas</h4>
+          <ul class="footer-links">
+            <li><a href="web-development.html">Web Development</a></li>
+            <li><a href="python.html">Python Programming</a></li>
+            <li><a href="ai.html">Artificial Intelligence</a></li>
+            <li><a href="machine-learning.html">Machine Learning</a></li>
+            <li><a href="cloud-computing.html">Cloud Computing</a></li>
+            <li><a href="cyber-security.html">Cyber Security</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Project Details</h4>
+          <ul class="footer-links">
+            <li><span style="color: var(--text-secondary); font-size: 0.875rem;">Program: BCA (Bachelor of Computer Applications)</span></li>
+            <li><span style="color: var(--text-secondary); font-size: 0.875rem;">Academic Year: 2024–2025</span></li>
+            <li><span style="color: var(--text-secondary); font-size: 0.875rem;">Type: Frontend Static Project</span></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2025 TechSphere – Technology & Learning Hub. Created for BCA College Academic Submission.</p>
+        <div class="footer-socials">
+          <a href="contact.html" class="social-link" title="Contact Us" aria-label="Contact">✉</a>
+          <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="social-link" title="GitHub" aria-label="GitHub">⚙</a>
+          <a href="career.html" class="social-link" title="Career Guide" aria-label="Career Roadmap">🎓</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to Top Floating Button -->
+  <button class="back-to-top" id="backToTop" aria-label="Scroll back to top">↑</button>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

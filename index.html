@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="TechSphere – A comprehensive technology and learning hub designed as a BCA college project to help students explore core IT domains and career roadmaps.">
+  <title>TechSphere – Technology & Learning Hub | Home</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Sticky Navigation Header -->
+  <header class="header">
+    <div class="container nav-container">
+      <a href="index.html" class="brand" aria-label="TechSphere Home">
+        <div class="brand-icon">T</div>
+        <div>
+          <span class="brand-name">TechSphere</span>
+          <span class="brand-badge">BCA Project</span>
+        </div>
+      </a>
+
+      <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle navigation menu" aria-expanded="false">
+        ☰
+      </button>
+
+      <nav>
+        <ul class="nav-menu" id="navMenu">
+          <li class="nav-item"><a href="index.html" class="nav-link active">Home</a></li>
+          <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
+          <li class="nav-item"><a href="web-development.html" class="nav-link">Web Development</a></li>
+          <li class="nav-item"><a href="python.html" class="nav-link">Python</a></li>
+          <li class="nav-item"><a href="ai.html" class="nav-link">AI</a></li>
+          <li class="nav-item"><a href="machine-learning.html" class="nav-link">Machine Learning</a></li>
+          <li class="nav-item"><a href="cloud-computing.html" class="nav-link">Cloud</a></li>
+          <li class="nav-item"><a href="cyber-security.html" class="nav-link">Cyber Security</a></li>
+          <li class="nav-item"><a href="career.html" class="nav-link">Career</a></li>
+          <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="main-content">
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+      <div class="container hero-content">
+        <span class="section-badge">Student Educational Resource</span>
+        <p class="hero-tagline">Explore Technology. Build Skills. Shape Your Future.</p>
+        <h1 class="hero-title">
+          Master Modern Tech in <br>
+          <span class="typing-wrap"><span id="typingText">Web Development</span><span class="typing-cursor">&nbsp;</span></span>
+        </h1>
+        <p class="hero-intro">
+          TechSphere is a simple learning hub that introduces students to different areas of technology and helps them explore possible career paths. Built by students, for students.
+        </p>
+
+        <div class="hero-actions">
+          <a href="#technologies" class="btn btn-primary">
+            Explore Technologies ↓
+          </a>
+          <a href="career.html" class="btn btn-secondary">
+            View Career Roadmap →
+          </a>
+        </div>
+
+        <!-- Academic Metrics (Realistic, Not Fake Corporate Stats) -->
+        <div class="metrics-strip">
+          <div class="metric-item">
+            <span class="metric-number">6</span>
+            <span class="metric-label">Technology Areas</span>
+          </div>
+          <div class="metric-item">
+            <span class="metric-number">10</span>
+            <span class="metric-label">Learning Pages</span>
+          </div>
+          <div class="metric-item">
+            <span class="metric-number">Multiple</span>
+            <span class="metric-label">Career Paths</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Technologies Grid Section -->
+    <section class="section" id="technologies">
+      <div class="container">
+        <div class="section-title-wrap">
+          <span class="section-badge">Curated Learning Tracks</span>
+          <h2 class="section-title">Core Technology Domains</h2>
+          <p class="section-subtitle">
+            Explore the essential computing disciplines every computer applications student should understand to build practical skills.
+          </p>
+        </div>
+
+        <div class="cards-grid">
+          <!-- Web Development -->
+          <div class="tech-card">
+            <div class="card-icon-wrap">&lt;/&gt;</div>
+            <h3 class="card-title">Web Development</h3>
+            <p class="card-desc">
+              Understand how modern websites and web applications are constructed using foundational building blocks: HTML, CSS, JavaScript, and responsive design techniques.
+            </p>
+            <div class="card-footer">
+              <a href="web-development.html" class="btn btn-secondary btn-sm">Learn More →</a>
+            </div>
+          </div>
+
+          <!-- Python -->
+          <div class="tech-card">
+            <div class="card-icon-wrap purple">🐍</div>
+            <h3 class="card-title">Python Programming</h3>
+            <p class="card-desc">
+              Discover why Python is one of the most versatile and popular languages for beginners, data science, task automation, backend engineering, and scientific computing.
+            </p>
+            <div class="card-footer">
+              <a href="python.html" class="btn btn-secondary btn-sm">Learn More →</a>
+            </div>
+          </div>
+
+          <!-- Artificial Intelligence -->
+          <div class="tech-card">
+            <div class="card-icon-wrap">🤖</div>
+            <h3 class="card-title">Artificial Intelligence</h3>
+            <p class="card-desc">
+              Learn how intelligent machines simulate human cognitive processes, perceive their environment, solve complex problems, and assist humans across various sectors.
+            </p>
+            <div class="card-footer">
+              <a href="ai.html" class="btn btn-secondary btn-sm">Learn More →</a>
+            </div>
+          </div>
+
+          <!-- Machine Learning -->
+          <div class="tech-card">
+            <div class="card-icon-wrap purple">⚙️</div>
+            <h3 class="card-title">Machine Learning</h3>
+            <p class="card-desc">
+              Dive into the algorithms that enable computers to learn patterns directly from datasets without needing explicit step-by-step programming for every scenario.
+            </p>
+            <div class="card-footer">
+              <a href="machine-learning.html" class="btn btn-secondary btn-sm">Learn More →</a>
+            </div>
+          </div>
+
+          <!-- Cloud Computing -->
+          <div class="tech-card">
+            <div class="card-icon-wrap">☁️</div>
+            <h3 class="card-title">Cloud Computing</h3>
+            <p class="card-desc">
+              Explore how on-demand virtualized computing power, scalable databases, and software hosting eliminate the need for expensive physical server rooms.
+            </p>
+            <div class="card-footer">
+              <a href="cloud-computing.html" class="btn btn-secondary btn-sm">Learn More →</a>
+            </div>
+          </div>
+
+          <!-- Cyber Security -->
+          <div class="tech-card">
+            <div class="card-icon-wrap purple">🛡️</div>
+            <h3 class="card-title">Cyber Security</h3>
+            <p class="card-desc">
+              Understand the core practices required to protect computer networks, digital identities, private records, and infrastructure from malicious cyber attacks.
+            </p>
+            <div class="card-footer">
+              <a href="cyber-security.html" class="btn btn-secondary btn-sm">Learn More →</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Why Learn Technology Section -->
+    <section class="section section-alt">
+      <div class="container">
+        <div class="section-title-wrap">
+          <span class="section-badge">Student Perspective</span>
+          <h2 class="section-title">Why Learn Technology?</h2>
+          <p class="section-subtitle">
+            Technology is now an integral part of almost every industry. Learning fundamental computing concepts provides practical advantages throughout college and beyond.
+          </p>
+        </div>
+
+        <div class="features-grid">
+          <div class="feature-box">
+            <h4>💡 Problem-Solving Skills</h4>
+            <p>
+              Programming and system design teach structured logical reasoning. Breaking large, messy challenges into clear sequential steps helps in all analytical tasks.
+            </p>
+          </div>
+
+          <div class="feature-box">
+            <h4>🌐 Understand Modern Tech</h4>
+            <p>
+              Move from being a passive consumer of software to understanding the underlying protocols, databases, and network architectures that power everyday digital services.
+            </p>
+          </div>
+
+          <div class="feature-box">
+            <h4>🛠️ Build Useful Projects</h4>
+            <p>
+              Transform theoretical computer science concepts into working portfolio applications, college seminar demonstrations, and practical software tools.
+            </p>
+          </div>
+
+          <div class="feature-box">
+            <h4>🚀 Explore Career Opportunities</h4>
+            <p>
+              Discover whether your natural interests align with visual UI development, backend logic, data pattern modeling, infrastructure setup, or cyber defense.
+            </p>
+          </div>
+        </div>
+
+        <!-- Academic Viva Notice -->
+        <div class="academic-badge-box">
+          <div class="academic-icon">🎓</div>
+          <div class="academic-text">
+            <h4>BCA Final Year / Semester College Submission</h4>
+            <p>
+              TechSphere is designed to provide clear, authentic explanations that students can comfortably understand and explain during viva examinations and academic project presentations.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Global Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-about">
+          <a href="index.html" class="brand">
+            <div class="brand-icon">T</div>
+            <span class="brand-name">TechSphere</span>
+          </a>
+          <p>
+            An educational technology hub created as a BCA student project. Dedicated to introducing beginners to essential computer science domains with structured roadmaps.
+          </p>
+        </div>
+
+        <div class="footer-col">
+          <h4>Navigation</h4>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Project</a></li>
+            <li><a href="career.html">Career Roadmap</a></li>
+            <li><a href="contact.html">Contact & FAQ</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Technology Areas</h4>
+          <ul class="footer-links">
+            <li><a href="web-development.html">Web Development</a></li>
+            <li><a href="python.html">Python Programming</a></li>
+            <li><a href="ai.html">Artificial Intelligence</a></li>
+            <li><a href="machine-learning.html">Machine Learning</a></li>
+            <li><a href="cloud-computing.html">Cloud Computing</a></li>
+            <li><a href="cyber-security.html">Cyber Security</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Project Details</h4>
+          <ul class="footer-links">
+            <li><span style="color: var(--text-secondary); font-size: 0.875rem;">Program: BCA (Bachelor of Computer Applications)</span></li>
+            <li><span style="color: var(--text-secondary); font-size: 0.875rem;">Academic Year: 2024–2025</span></li>
+            <li><span style="color: var(--text-secondary); font-size: 0.875rem;">Type: Frontend Static Project</span></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2025 TechSphere – Technology & Learning Hub. Created for BCA College Academic Submission.</p>
+        <div class="footer-socials">
+          <a href="contact.html" class="social-link" title="Contact Us" aria-label="Contact">✉</a>
+          <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="social-link" title="GitHub" aria-label="GitHub">⚙</a>
+          <a href="career.html" class="social-link" title="Career Guide" aria-label="Career Roadmap">🎓</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to Top Floating Button -->
+  <button class="back-to-top" id="backToTop" aria-label="Scroll back to top">↑</button>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Cyber Security Guide – Learn common threats like phishing, malware, password attacks, data protection fundamentals, and practical online safety rules for BCA students.">
+  <title>Cyber Security – TechSphere</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Sticky Navigation Header -->
+  <header class="header">
+    <div class="container nav-container">
+      <a href="index.html" class="brand" aria-label="TechSphere Home">
+        <div class="brand-icon">T</div>
+        <div>
+          <span class="brand-name">TechSphere</span>
+          <span class="brand-badge">BCA Project</span>
+        </div>
+      </a>
+
+      <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle navigation menu" aria-expanded="false">
+        ☰
+      </button>
+
+      <nav>
+        <ul class="nav-menu" id="navMenu">
+          <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+          <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
+          <li class="nav-item"><a href="web-development.html" class="nav-link">Web Development</a></li>
+          <li class="nav-item"><a href="python.html" class="nav-link">Python</a></li>
+          <li class="nav-item"><a href="ai.html" class="nav-link">AI</a></li>
+          <li class="nav-item"><a href="machine-learning.html" class="nav-link">Machine Learning</a></li>
+          <li class="nav-item"><a href="cloud-computing.html" class="nav-link">Cloud</a></li>
+          <li class="nav-item"><a href="cyber-security.html" class="nav-link active">Cyber Security</a></li>
+          <li class="nav-item"><a href="career.html" class="nav-link">Career</a></li>
+          <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="main-content">
+    <!-- Page Header -->
+    <section class="page-header">
+      <div class="container page-header-content">
+        <ul class="breadcrumb">
+          <li><a href="index.html">Home</a></li>
+          <li class="breadcrumb-separator">/</li>
+          <li>Cyber Security</li>
+        </ul>
+        <span class="section-badge purple">🛡️ Defense Track</span>
+        <h1>Cyber Security</h1>
+        <p>
+          Learn the principles of securing networks, data, and software systems against unauthorized digital intrusions, malicious attacks, and data breaches.
+        </p>
+      </div>
+    </section>
+
+    <!-- What is Cyber Security & Importance -->
+    <section class="section">
+      <div class="container">
+        <div class="cards-grid-2">
+          <div>
+            <span class="section-badge">Core Concept</span>
+            <h2>What is Cyber Security?</h2>
+            <p>
+              Cyber Security is the practice of protecting computers, servers, mobile devices, electronic systems, networks, and sensitive data from malicious attacks, digital theft, and unauthorized disruption.
+            </p>
+            <p>
+              It encompasses a combination of technical tools (firewalls, encryption, antivirus), security policies, and human awareness to maintain the confidentiality, integrity, and availability (the CIA triad) of digital information.
+            </p>
+          </div>
+
+          <div class="tech-card">
+            <h3 class="card-title">Why Cyber Security is Important</h3>
+            <p class="card-desc">
+              As society conducts more of its essential activities online—from banking and health records to university grading portals:
+            </p>
+            <ul>
+              <li><strong>Protects Personal Privacy:</strong> Prevents unauthorized exposure of student credentials, identity numbers, and private chats.</li>
+              <li><strong>Prevents Financial Loss:</strong> Safeguards against credit card fraud, ransomware extortion, and account takeovers.</li>
+              <li><strong>Maintains Business Continuity:</strong> Ensures that vital web services and infrastructure remain operational 24/7.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Common Cyber Threats -->
+    <section class="section section-alt">
+      <div class="container">
+        <div class="section-title-wrap">
+          <span class="section-badge purple">Threat Landscape</span>
+          <h2 class="section-title">Common Cyber Threats Explained</h2>
+          <p class="section-subtitle">
+            The most prevalent digital attack vectors encountered on the internet today.
+          </p>
+        </div>
+
+        <div class="cards-grid-3">
+          <!-- Phishing -->
+          <div class="tech-card">
+            <div class="card-icon-wrap">🎣</div>
+            <h3 class="card-title">Phishing</h3>
+            <p class="card-desc">
+              Social engineering attacks where attackers impersonate trustworthy institutions (banks, colleges, or service providers) through fake emails or websites to trick victims into revealing passwords or OTPs.
+            </p>
+          </div>
+
+          <!-- Malware -->
+          <div class="tech-card">
+            <div class="card-icon-wrap purple">🦠</div>
+            <h3 class="card-title">Malware</h3>
+            <p class="card-desc">
+              Any malicious software created to cause damage or gain unauthorized access. Common forms include viruses, trojans, spyware, keyloggers, and ransomware that encrypts user files for extortion.
+            </p>
+          </div>
+
+          <!-- Password Attacks -->
+          <div class="tech-card">
+            <div class="card-icon-wrap">🔑</div>
+            <h3 class="card-title">Password Attacks</h3>
+            <p class="card-desc">
+              Techniques such as brute-force attacks, dictionary attacks, and credential stuffing where automated scripts try thousands of common passwords or previously leaked credential lists to crack accounts.
+            </p>
+          </div>
+        </div>
+
+        <!-- Data Protection & Safe Browsing -->
+        <div class="cards-grid-2" style="margin-top: 2rem;">
+          <div class="feature-box">
+            <h4>🔐 Data Protection & Encryption</h4>
+            <p>
+              Encryption scrambles readable plaintext into unreadable ciphertext using mathematical keys. Even if intercepted on a public network, encrypted data (such as HTTPS or TLS) cannot be read by eavesdroppers without the matching decryption key.
+            </p>
+          </div>
+
+          <div class="feature-box">
+            <h4>🌐 Safe Browsing Habits</h4>
+            <p>
+              Safe browsing means checking the URL padlock icon in the browser address bar, verifying that domain spellings match the legitimate service (avoiding typosquatting), and never downloading executable files from unverified third-party sources.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Stay Safe Online: Practical Checklist -->
+    <section class="section">
+      <div class="container">
+        <div class="section-title-wrap">
+          <span class="section-badge">Student Practical Guide</span>
+          <h2 class="section-title">Stay Safe Online: Practical Checklist</h2>
+          <p class="section-subtitle">
+            Actionable daily cyber hygiene practices that every student and developer should follow.
+          </p>
+        </div>
+
+        <div class="safety-checklist">
+          <!-- Tip 1 -->
+          <div class="safety-item">
+            <div class="safety-icon">✓</div>
+            <div>
+              <h4>Use Strong Passwords</h4>
+              <p>Create passwords with at least 12 characters, mixing uppercase letters, lowercase letters, numbers, and symbols. Never use your birthdate or name.</p>
+            </div>
+          </div>
+
+          <!-- Tip 2 -->
+          <div class="safety-item">
+            <div class="safety-icon">✓</div>
+            <div>
+              <h4>Enable Two-Factor Authentication (2FA)</h4>
+              <p>Add a secondary verification step via an authenticator app (like Google Authenticator) for your email, college portals, and social media.</p>
+            </div>
+          </div>
+
+          <!-- Tip 3 -->
+          <div class="safety-item">
+            <div class="safety-icon">✓</div>
+            <div>
+              <h4>Avoid Suspicious Links</h4>
+              <p>Never click on links or download unexpected attachments from unknown senders claiming you won prizes or need urgent account verification.</p>
+            </div>
+          </div>
+
+          <!-- Tip 4 -->
+          <div class="safety-item">
+            <div class="safety-icon">✓</div>
+            <div>
+              <h4>Keep Software Updated</h4>
+              <p>Regularly update your operating system, web browsers, and apps to patch critical security vulnerabilities discovered by vendors.</p>
+            </div>
+          </div>
+
+          <!-- Tip 5 -->
+          <div class="safety-item">
+            <div class="safety-icon">✓</div>
+            <div>
+              <h4>Do Not Share Passwords</h4>
+              <p>Never share your passwords with friends, colleagues, or write them down on unsecured sticky notes attached to your computer monitor.</p>
+            </div>
+          </div>
+
+          <!-- Tip 6 -->
+          <div class="safety-item">
+            <div class="safety-icon">✓</div>
+            <div>
+              <h4>Use Trusted Websites Only</h4>
+              <p>Ensure websites use valid HTTPS SSL certificates before entering login credentials, bank details, or submitting college applications.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Careers in Cyber Security -->
+        <div class="section-title-wrap" style="margin-top: 4rem; margin-bottom: 2rem;">
+          <span class="section-badge purple">Career Specializations</span>
+          <h2 class="section-title">Cyber Security Career Paths</h2>
+        </div>
+
+        <div class="cards-grid-3">
+          <div class="tech-card">
+            <h4>Security Analyst</h4>
+            <p class="card-desc">Monitors organization networks for security events, analyzes intrusion alerts, and remediates vulnerabilities.</p>
+          </div>
+          <div class="tech-card">
+            <h4>Ethical Hacker / Pen Tester</h4>
+            <p class="card-desc">Simulates real attacks with written authorization to identify defensive loopholes in software before criminals can exploit them.</p>
+          </div>
+          <div class="tech-card">
+            <h4>SOC Analyst</h4>
+            <p class="card-desc">Works in a 24/7 Security Operations Center triaging active alarms, tracing incident root causes, and executing containment protocols.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Global Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-about">
+          <a href="index.html" class="brand">
+            <div class="brand-icon">T</div>
+            <span class="brand-name">TechSphere</span>
+          </a>
+          <p>
+            An educational technology hub created as a BCA student project. Dedicated to introducing beginners to essential computer science domains with structured roadmaps.
+          </p>
+        </div>
+
+        <div class="footer-col">
+          <h4>Navigation</h4>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Project</a></li>
+            <li><a href="career.html">Career Roadmap</a></li>
+            <li><a href="contact.html">Contact & FAQ</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Technology Areas</h4>
+          <ul class="footer-links">
+            <li><a href="web-development.html">Web Development</a></li>
+            <li><a href="python.html">Python Programming</a></li>
+            <li><a href="ai.html">Artificial Intelligence</a></li>
+            <li><a href="machine-learning.html">Machine Learning</a></li>
+            <li><a href="cloud-computing.html">Cloud Computing</a></li>
+            <li><a href="cyber-security.html">Cyber Security</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Project Details</h4>
+          <ul class="footer-links">
+            <li><span style="color: var(--text-secondary); font-size: 0.875rem;">Program: BCA (Bachelor of Computer Applications)</span></li>
+            <li><span style="color: var(--text-secondary); font-size: 0.875rem;">Academic Year: 2024–2025</span></li>
+            <li><span style="color: var(--text-secondary); font-size: 0.875rem;">Type: Frontend Static Project</span></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2025 TechSphere – Technology & Learning Hub. Created for BCA College Academic Submission.</p>
+        <div class="footer-socials">
+          <a href="contact.html" class="social-link" title="Contact Us" aria-label="Contact">✉</a>
+          <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="social-link" title="GitHub" aria-label="GitHub">⚙</a>
+          <a href="career.html" class="social-link" title="Career Guide" aria-label="Career Roadmap">🎓</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to Top Floating Button -->
+  <button class="back-to-top" id="backToTop" aria-label="Scroll back to top">↑</button>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

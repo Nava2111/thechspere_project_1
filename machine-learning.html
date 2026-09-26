@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Machine Learning Guide – Learn ML concepts, supervised, unsupervised, and reinforcement learning, with a visual process pipeline for BCA students.">
+  <title>Machine Learning – TechSphere</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Sticky Navigation Header -->
+  <header class="header">
+    <div class="container nav-container">
+      <a href="index.html" class="brand" aria-label="TechSphere Home">
+        <div class="brand-icon">T</div>
+        <div>
+          <span class="brand-name">TechSphere</span>
+          <span class="brand-badge">BCA Project</span>
+        </div>
+      </a>
+
+      <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle navigation menu" aria-expanded="false">
+        ☰
+      </button>
+
+      <nav>
+        <ul class="nav-menu" id="navMenu">
+          <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+          <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
+          <li class="nav-item"><a href="web-development.html" class="nav-link">Web Development</a></li>
+          <li class="nav-item"><a href="python.html" class="nav-link">Python</a></li>
+          <li class="nav-item"><a href="ai.html" class="nav-link">AI</a></li>
+          <li class="nav-item"><a href="machine-learning.html" class="nav-link active">Machine Learning</a></li>
+          <li class="nav-item"><a href="cloud-computing.html" class="nav-link">Cloud</a></li>
+          <li class="nav-item"><a href="cyber-security.html" class="nav-link">Cyber Security</a></li>
+          <li class="nav-item"><a href="career.html" class="nav-link">Career</a></li>
+          <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="main-content">
+    <!-- Page Header -->
+    <section class="page-header">
+      <div class="container page-header-content">
+        <ul class="breadcrumb">
+          <li><a href="index.html">Home</a></li>
+          <li class="breadcrumb-separator">/</li>
+          <li>Machine Learning</li>
+        </ul>
+        <span class="section-badge purple">⚙️ Data & Modeling Track</span>
+        <h1>Machine Learning</h1>
+        <p>
+          Understand how algorithmic models learn patterns from training data, the three core learning paradigms, real-world applications, and the data pipeline.
+        </p>
+      </div>
+    </section>
+
+    <!-- What is ML & Paradigm Shift -->
+    <section class="section">
+      <div class="container">
+        <div class="cards-grid-2">
+          <div>
+            <span class="section-badge">Core Principle</span>
+            <h2>What is Machine Learning?</h2>
+            <p>
+              Machine Learning (ML) is an essential subfield of Artificial Intelligence. It focuses on the development of mathematical algorithms that allow computers to automatically learn from experience and historical data without being explicitly programmed with manual hard-coded rules for every possibility.
+            </p>
+            <p>
+              Instead of writing endless <code>if-else</code> conditions, developers provide sample data to the algorithm, which discovers the underlying patterns and builds its own decision logic.
+            </p>
+          </div>
+
+          <div class="tech-card">
+            <h3 class="card-title">Traditional Programming vs ML</h3>
+            <p class="card-desc">
+              Understanding this fundamental difference is a key question during BCA academic vivas:
+            </p>
+            <ul>
+              <li><strong>Traditional Programming:</strong> Developer inputs <em>Data + Explicit Rules</em> into a computer to produce <em>Answers / Output</em>.</li>
+              <li><strong>Machine Learning:</strong> Developer inputs <em>Data + Historical Answers</em> into a learning algorithm to produce the <em>Rules / Model</em>.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Visual Process Flow: Data -> Training -> Model -> Prediction -->
+    <section class="section section-alt">
+      <div class="container">
+        <div class="section-title-wrap">
+          <span class="section-badge">Step-by-Step Architecture</span>
+          <h2 class="section-title">The Machine Learning Process</h2>
+          <p class="section-subtitle">
+            Every machine learning project progresses through four fundamental sequential stages.
+          </p>
+        </div>
+
+        <div class="process-flow">
+          <!-- Step 1: Data -->
+          <div class="process-step">
+            <div class="process-step-num">Stage 01</div>
+            <div class="process-step-name">Data</div>
+            <div class="process-step-desc">Gathering, cleaning, preprocessing, and normalizing raw historical data.</div>
+          </div>
+
+          <div class="process-arrow">→</div>
+
+          <!-- Step 2: Training -->
+          <div class="process-step">
+            <div class="process-step-num">Stage 02</div>
+            <div class="process-step-name">Training</div>
+            <div class="process-step-desc">Feeding processed data to an algorithm to iteratively adjust mathematical weights.</div>
+          </div>
+
+          <div class="process-arrow">→</div>
+
+          <!-- Step 3: Model -->
+          <div class="process-step">
+            <div class="process-step-num">Stage 03</div>
+            <div class="process-step-name">Model</div>
+            <div class="process-step-desc">The trained mathematical representation that encapsulates learned patterns.</div>
+          </div>
+
+          <div class="process-arrow">→</div>
+
+          <!-- Step 4: Prediction -->
+          <div class="process-step">
+            <div class="process-step-num">Stage 04</div>
+            <div class="process-step-name">Prediction</div>
+            <div class="process-step-desc">Feeding new unseen inputs into the model to classify or forecast outcomes.</div>
+          </div>
+        </div>
+
+        <!-- Detailed Breakdown -->
+        <div class="cards-grid-2" style="margin-top: 3rem;">
+          <div class="feature-box">
+            <h4>1. Data Collection & Preprocessing</h4>
+            <p>
+              Data is the fuel of ML. Real-world data often has missing values, duplicates, and outliers. Data preprocessing converts raw data into standardized numerical matrices that algorithms can digest.
+            </p>
+          </div>
+
+          <div class="feature-box">
+            <h4>2. Model Training & Evaluation</h4>
+            <p>
+              The algorithm repeatedly iterates through training rows, calculates errors using a loss function, and uses optimization techniques (like Gradient Descent) to minimize mistakes until accuracy reaches acceptable thresholds.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Three Main Types of Machine Learning -->
+    <section class="section">
+      <div class="container">
+        <div class="section-title-wrap">
+          <span class="section-badge purple">Core Taxonomies</span>
+          <h2 class="section-title">The Three Paradigms of Machine Learning</h2>
+          <p class="section-subtitle">
+            How algorithms are categorized according to the presence and nature of learning feedback.
+          </p>
+        </div>
+
+        <div class="cards-grid-3">
+          <!-- Supervised Learning -->
+          <div class="tech-card">
+            <div class="card-icon-wrap">🏷️</div>
+            <h3 class="card-title">Supervised Learning</h3>
+            <p class="card-desc">
+              The algorithm trains on <strong>labeled data</strong> where every sample is paired with the correct output target.
+            </p>
+            <p class="card-desc">
+              <strong>Key Subtypes:</strong><br>
+              • <em>Classification:</em> Sorting into categories (e.g., spam vs non-spam email).<br>
+              • <em>Regression:</em> Predicting continuous numbers (e.g., predicting student exam marks or housing prices).
+            </p>
+          </div>
+
+          <!-- Unsupervised Learning -->
+          <div class="tech-card">
+            <div class="card-icon-wrap purple">🔍</div>
+            <h3 class="card-title">Unsupervised Learning</h3>
+            <p class="card-desc">
+              The algorithm receives <strong>unlabeled data</strong> without pre-existing category tags and must discover inherent structures on its own.
+            </p>
+            <p class="card-desc">
+              <strong>Key Subtypes:</strong><br>
+              • <em>Clustering:</em> Grouping similar items together (e.g., customer purchase segmentation).<br>
+              • <em>Dimensionality Reduction:</em> Compressing redundant features while preserving core signals.
+            </p>
+          </div>
+
+          <!-- Reinforcement Learning -->
+          <div class="tech-card">
+            <div class="card-icon-wrap">🎮</div>
+            <h3 class="card-title">Reinforcement Learning</h3>
+            <p class="card-desc">
+              An autonomous agent learns through <strong>trial, error, and feedback</strong> within an interactive environment.
+            </p>
+            <p class="card-desc">
+              The agent earns virtual rewards for successful actions and penalties for mistakes. Over millions of iterations, it discovers optimal decision policies (e.g., AlphaGo, self-driving maneuvers, robotics).
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Real-World Applications & Career Opportunities -->
+    <section class="section section-alt">
+      <div class="container">
+        <div class="section-title-wrap">
+          <span class="section-badge">Practical Impact</span>
+          <h2 class="section-title">Real-World Applications & Career Paths</h2>
+          <p class="section-subtitle">
+            How machine learning powers industry solutions and the entry points for BCA graduates.
+          </p>
+        </div>
+
+        <div class="cards-grid-2">
+          <!-- Applications -->
+          <div class="tech-card">
+            <h3 class="card-title">Real-World ML Applications</h3>
+            <ul>
+              <li><strong>Financial Fraud Detection:</strong> Banks inspect transaction locations, amounts, and times in real-time to flag unusual credit card charges.</li>
+              <li><strong>Healthcare Diagnostics:</strong> Predicting disease onset risk by analyzing historical patient vital signs and lab results.</li>
+              <li><strong>Recommendation Engines:</strong> Powering personalized shopping suggestions on Amazon and Flipkart.</li>
+              <li><strong>Speech-to-Text:</strong> Transcribing spoken voice recordings into clean text with high accuracy.</li>
+            </ul>
+          </div>
+
+          <!-- Careers -->
+          <div class="tech-card">
+            <h3 class="card-title">Machine Learning Career Paths</h3>
+            <ul>
+              <li><strong>Machine Learning Engineer:</strong> Designs data pipelines and deploys production-ready models to cloud environments.</li>
+              <li><strong>Data Scientist:</strong> Formulates statistical experiments and extracts actionable business insights from massive datasets.</li>
+              <li><strong>Data Analyst:</strong> Cleans and visualizes company data using Python, SQL, and business intelligence dashboards.</li>
+              <li><strong>Junior AI/ML Developer:</strong> Helps train and benchmark pre-built models for college or company projects.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Global Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-about">
+          <a href="index.html" class="brand">
+            <div class="brand-icon">T</div>
+            <span class="brand-name">TechSphere</span>
+          </a>
+          <p>
+            An educational technology hub created as a BCA student project. Dedicated to introducing beginners to essential computer science domains with structured roadmaps.
+          </p>
+        </div>
+
+        <div class="footer-col">
+          <h4>Navigation</h4>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Project</a></li>
+            <li><a href="career.html">Career Roadmap</a></li>
+            <li><a href="contact.html">Contact & FAQ</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Technology Areas</h4>
+          <ul class="footer-links">
+            <li><a href="web-development.html">Web Development</a></li>
+            <li><a href="python.html">Python Programming</a></li>
+            <li><a href="ai.html">Artificial Intelligence</a></li>
+            <li><a href="machine-learning.html">Machine Learning</a></li>
+            <li><a href="cloud-computing.html">Cloud Computing</a></li>
+            <li><a href="cyber-security.html">Cyber Security</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Project Details</h4>
+          <ul class="footer-links">
+            <li><span style="color: var(--text-secondary); font-size: 0.875rem;">Program: BCA (Bachelor of Computer Applications)</span></li>
+            <li><span style="color: var(--text-secondary); font-size: 0.875rem;">Academic Year: 2024–2025</span></li>
+            <li><span style="color: var(--text-secondary); font-size: 0.875rem;">Type: Frontend Static Project</span></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2025 TechSphere – Technology & Learning Hub. Created for BCA College Academic Submission.</p>
+        <div class="footer-socials">
+          <a href="contact.html" class="social-link" title="Contact Us" aria-label="Contact">✉</a>
+          <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="social-link" title="GitHub" aria-label="GitHub">⚙</a>
+          <a href="career.html" class="social-link" title="Career Guide" aria-label="Career Roadmap">🎓</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to Top Floating Button -->
+  <button class="back-to-top" id="backToTop" aria-label="Scroll back to top">↑</button>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

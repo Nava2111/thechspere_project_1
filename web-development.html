@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Web Development Guide – Learn frontend, backend, HTML, CSS, JavaScript, responsive design, and step-by-step roadmap for BCA students.">
+  <title>Web Development – TechSphere</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Sticky Navigation Header -->
+  <header class="header">
+    <div class="container nav-container">
+      <a href="index.html" class="brand" aria-label="TechSphere Home">
+        <div class="brand-icon">T</div>
+        <div>
+          <span class="brand-name">TechSphere</span>
+          <span class="brand-badge">BCA Project</span>
+        </div>
+      </a>
+
+      <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle navigation menu" aria-expanded="false">
+        ☰
+      </button>
+
+      <nav>
+        <ul class="nav-menu" id="navMenu">
+          <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+          <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
+          <li class="nav-item"><a href="web-development.html" class="nav-link active">Web Development</a></li>
+          <li class="nav-item"><a href="python.html" class="nav-link">Python</a></li>
+          <li class="nav-item"><a href="ai.html" class="nav-link">AI</a></li>
+          <li class="nav-item"><a href="machine-learning.html" class="nav-link">Machine Learning</a></li>
+          <li class="nav-item"><a href="cloud-computing.html" class="nav-link">Cloud</a></li>
+          <li class="nav-item"><a href="cyber-security.html" class="nav-link">Cyber Security</a></li>
+          <li class="nav-item"><a href="career.html" class="nav-link">Career</a></li>
+          <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="main-content">
+    <!-- Page Header -->
+    <section class="page-header">
+      <div class="container page-header-content">
+        <ul class="breadcrumb">
+          <li><a href="index.html">Home</a></li>
+          <li class="breadcrumb-separator">/</li>
+          <li>Web Development</li>
+        </ul>
+        <span class="section-badge">&lt;/&gt; Technology Track</span>
+        <h1>Web Development</h1>
+        <p>
+          Understand the foundational building blocks of the web: frontend styling, backend logic, responsive design patterns, and the recommended student roadmap.
+        </p>
+      </div>
+    </section>
+
+    <!-- Overview Section -->
+    <section class="section">
+      <div class="container">
+        <div class="cards-grid-2">
+          <div>
+            <span class="section-badge">Core Concept</span>
+            <h2>What is Web Development?</h2>
+            <p>
+              Web development involves the creation, testing, and maintenance of websites and web applications that are accessed through internet browsers such as Google Chrome, Mozilla Firefox, or Microsoft Edge.
+            </p>
+            <p>
+              It encompasses everything from simple static web documents that display plain informational text, to complex interactive portals such as social networks, e-commerce stores, and collaborative office suites.
+            </p>
+          </div>
+
+          <!-- Comparison: Frontend vs Backend -->
+          <div class="tech-card">
+            <h3 class="card-title">Frontend vs Backend Development</h3>
+            <p class="card-desc">
+              Web applications operate on a client-server architecture consisting of two complementary layers:
+            </p>
+            <ul>
+              <li><strong>Frontend (Client-Side):</strong> The visual part that users see and interact with directly in their browser. Built using HTML, CSS, and JavaScript.</li>
+              <li><strong>Backend (Server-Side):</strong> The invisible engine running on remote servers that processes data, manages databases, handles user authentication, and runs business rules.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Three Main Core Technologies -->
+    <section class="section section-alt">
+      <div class="container">
+        <div class="section-title-wrap">
+          <span class="section-badge">The Web Pillars</span>
+          <h2 class="section-title">The Three Core Web Technologies</h2>
+          <p class="section-subtitle">
+            Every web page in existence relies on these three foundational technologies working together in harmony.
+          </p>
+        </div>
+
+        <div class="cards-grid-3">
+          <!-- HTML Card -->
+          <div class="tech-card">
+            <div class="card-icon-wrap">&lt;H&gt;</div>
+            <h3 class="card-title">HTML (HyperText Markup Language)</h3>
+            <p class="card-desc">
+              <strong>Used to create the structure of webpages.</strong>
+            </p>
+            <p class="card-desc">
+              HTML provides the skeletal framework of every webpage using semantic tags like <code>&lt;header&gt;</code>, <code>&lt;nav&gt;</code>, <code>&lt;section&gt;</code>, headings, paragraphs, lists, forms, and images. It defines what content exists on the page.
+            </p>
+            <div class="card-footer">
+              <span class="section-badge" style="font-size:0.75rem;">Structure & Semantics</span>
+            </div>
+          </div>
+
+          <!-- CSS Card -->
+          <div class="tech-card">
+            <div class="card-icon-wrap purple">🎨</div>
+            <h3 class="card-title">CSS (Cascading Style Sheets)</h3>
+            <p class="card-desc">
+              <strong>Used to design and style webpages.</strong>
+            </p>
+            <p class="card-desc">
+              CSS transforms raw HTML into attractive visual layouts. It controls colors, fonts, margins, paddings, flexbox grids, animations, dark mode palettes, and responsive screen behaviors so content looks professional.
+            </p>
+            <div class="card-footer">
+              <span class="section-badge purple" style="font-size:0.75rem;">Design & Layout</span>
+            </div>
+          </div>
+
+          <!-- JavaScript Card -->
+          <div class="tech-card">
+            <div class="card-icon-wrap">⚡</div>
+            <h3 class="card-title">JavaScript</h3>
+            <p class="card-desc">
+              <strong>Used to add interaction and functionality.</strong>
+            </p>
+            <p class="card-desc">
+              JavaScript brings static web pages to life. It handles button clicks, form validation, dynamic DOM updates, data loading without page refreshes (AJAX/Fetch), dropdown menus, and client-side calculations.
+            </p>
+            <div class="card-footer">
+              <span class="section-badge" style="font-size:0.75rem;">Logic & Behavior</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Responsive Design & Roadmap -->
+    <section class="section">
+      <div class="container">
+        <!-- Responsive Design -->
+        <div class="feature-box" style="margin-bottom: 3.5rem;">
+          <span class="section-badge">Essential Standard</span>
+          <h3 style="margin-top: 0.5rem; margin-bottom: 0.75rem;">Responsive Web Design</h3>
+          <p>
+            Today, users browse the web across diverse devices: smartphones, tablets, laptops, and ultra-wide desktop monitors. Responsive Web Design (RWD) is an approach that ensures a website adapts its layout, font sizes, images, and navigation automatically based on the user's viewport size.
+          </p>
+          <p>
+            Key techniques include fluid percentage-based container widths, CSS media queries (<code>@media (max-width: 768px)</code>), flexible images (<code>max-width: 100%</code>), and modern CSS Flexbox and Grid layouts.
+          </p>
+        </div>
+
+        <!-- Web Development Roadmap -->
+        <div class="section-title-wrap">
+          <span class="section-badge">Student Learning Path</span>
+          <h2 class="section-title">Web Development Roadmap</h2>
+          <p class="section-subtitle">
+            Follow this progressive step-by-step path to build genuine frontend competencies during your BCA semesters.
+          </p>
+        </div>
+
+        <div class="process-flow">
+          <div class="process-step">
+            <div class="process-step-num">Step 01</div>
+            <div class="process-step-name">HTML</div>
+            <div class="process-step-desc">Learn semantic tags, forms, tables, links, and accessibility rules.</div>
+          </div>
+
+          <div class="process-arrow">→</div>
+
+          <div class="process-step">
+            <div class="process-step-num">Step 02</div>
+            <div class="process-step-name">CSS</div>
+            <div class="process-step-desc">Master the Box Model, Flexbox, Grid, custom styling, and transitions.</div>
+          </div>
+
+          <div class="process-arrow">→</div>
+
+          <div class="process-step">
+            <div class="process-step-num">Step 03</div>
+            <div class="process-step-name">JavaScript</div>
+            <div class="process-step-desc">Learn variables, functions, DOM manipulation, events, and fetch requests.</div>
+          </div>
+
+          <div class="process-arrow">→</div>
+
+          <div class="process-step">
+            <div class="process-step-num">Step 04</div>
+            <div class="process-step-name">Responsive Design</div>
+            <div class="process-step-desc">Optimize viewports with media queries and mobile-first principles.</div>
+          </div>
+
+          <div class="process-arrow">→</div>
+
+          <div class="process-step">
+            <div class="process-step-num">Step 05</div>
+            <div class="process-step-name">Projects</div>
+            <div class="process-step-desc">Build real portfolio sites like TechSphere to showcase your practical skills.</div>
+          </div>
+        </div>
+
+        <!-- Career Opportunities -->
+        <div class="section-title-wrap" style="margin-top: 4rem; margin-bottom: 2rem;">
+          <span class="section-badge purple">Employment Avenues</span>
+          <h2 class="section-title">Web Development Career Opportunities</h2>
+        </div>
+
+        <div class="cards-grid-3">
+          <div class="tech-card">
+            <h4>Frontend Developer</h4>
+            <p class="card-desc">Specializes in implementing user interfaces, animations, and client-side interactions that users see and experience directly.</p>
+          </div>
+          <div class="tech-card">
+            <h4>Backend Developer</h4>
+            <p class="card-desc">Focuses on server architecture, database modeling (SQL/NoSQL), authentication APIs, and business processing services.</p>
+          </div>
+          <div class="tech-card">
+            <h4>Full-Stack Developer</h4>
+            <p class="card-desc">Understands both client-side and server-side paradigms, capable of coordinating end-to-end web software lifecycles.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Global Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-about">
+          <a href="index.html" class="brand">
+            <div class="brand-icon">T</div>
+            <span class="brand-name">TechSphere</span>
+          </a>
+          <p>
+            An educational technology hub created as a BCA student project. Dedicated to introducing beginners to essential computer science domains with structured roadmaps.
+          </p>
+        </div>
+
+        <div class="footer-col">
+          <h4>Navigation</h4>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Project</a></li>
+            <li><a href="career.html">Career Roadmap</a></li>
+            <li><a href="contact.html">Contact & FAQ</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Technology Areas</h4>
+          <ul class="footer-links">
+            <li><a href="web-development.html">Web Development</a></li>
+            <li><a href="python.html">Python Programming</a></li>
+            <li><a href="ai.html">Artificial Intelligence</a></li>
+            <li><a href="machine-learning.html">Machine Learning</a></li>
+            <li><a href="cloud-computing.html">Cloud Computing</a></li>
+            <li><a href="cyber-security.html">Cyber Security</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Project Details</h4>
+          <ul class="footer-links">
+            <li><span style="color: var(--text-secondary); font-size: 0.875rem;">Program: BCA (Bachelor of Computer Applications)</span></li>
+            <li><span style="color: var(--text-secondary); font-size: 0.875rem;">Academic Year: 2024–2025</span></li>
+            <li><span style="color: var(--text-secondary); font-size: 0.875rem;">Type: Frontend Static Project</span></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2025 TechSphere – Technology & Learning Hub. Created for BCA College Academic Submission.</p>
+        <div class="footer-socials">
+          <a href="contact.html" class="social-link" title="Contact Us" aria-label="Contact">✉</a>
+          <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="social-link" title="GitHub" aria-label="GitHub">⚙</a>
+          <a href="career.html" class="social-link" title="Career Guide" aria-label="Career Roadmap">🎓</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to Top Floating Button -->
+  <button class="back-to-top" id="backToTop" aria-label="Scroll back to top">↑</button>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
